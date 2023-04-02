@@ -16,17 +16,27 @@ namespace ConsoleApp2
         //Neck
 
         //Head - Where strings attach
+        public int numberOfStrings
+        {
+            get { return numberOfStrings; }
+            set { numberOfStrings = value; }
+        }
 
-        private int numberOfStrings = 6;
-
-        /// <summary>
-        /// The length of the neck, recorded in inches
-        /// </summary>
-        private double lengthOfNeck = 24;
-
-        private int numberOfFrets = 22;
-
-        private double weight = 8.5;
+         public double lengthOfNeck
+        {
+            get { return lengthOfNeck; }
+            set { lengthOfNeck = value; }
+        }
+        public double numberOfFrets
+        {
+            get { return numberOfFrets; }
+            set { numberOfFrets = value; }
+        }
+        public double weight
+        {
+            get { return weight; }
+            set { weight = value; }
+        }
 
         private string brand;
 
@@ -40,6 +50,7 @@ namespace ConsoleApp2
             brand = brandOfGuitar;
         }
 
+        /* Old Code Below
         public void SetNumberOfStrings(int newStringCount)
         {
             numberOfStrings = newStringCount;
@@ -79,6 +90,7 @@ namespace ConsoleApp2
         {
             return weight;
         }
+        */
         public string GetBrand()
         {
             return brand;
